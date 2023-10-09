@@ -6,7 +6,7 @@ body {
   margin: auto;
   padding: auto;
 }
-[src="logo.png"] {
+[src="img/logo.png"] {
   width: 395px;
   margin-top: 200px;
   margin-left: 120px;
@@ -41,11 +41,11 @@ h2 {
   font-weight: bold;
   align-items: center;
 }
-[src="google.png"] {
+[src="img/google.png"] {
   width: 20px;
   margin: 0 3px;
 }
-[src="fb.png"] {
+[src="img/fb.png"] {
   width: 20px;
   margin: 0 3px;
 }
@@ -108,31 +108,31 @@ span {
   cursor: pointer;
   font-size: 15px;
 }
-.term{
-    color: rgb(113, 118, 123);
-    font-size: 10px;
-    margin-top: -20px;
-    width: 7.9cm;
+.term {
+  color: rgb(113, 118, 123);
+  font-size: 10px;
+  margin-top: -20px;
+  width: 7.9cm;
 }
-[href="#32"]{
-    color: rgb(29,155,240);
-    font-size: 10px;
-    text-decoration: none;
+[href="#32"] {
+  color: rgb(29, 155, 240);
+  font-size: 10px;
+  text-decoration: none;
 }
-h3{
-    color: #fff;
-    margin-top: 70px;
-    font-size: 15px;
+h3 {
+  color: #fff;
+  margin-top: 70px;
+  font-size: 15px;
 }
-.login{
-    margin: 5px 0;
-    width: 7.9cm;
-    height: 38px;
-    border: 1px solid rgb(83,100,113);
-    border-radius: 32px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(29,155,240);
+.login {
+  margin: 5px 0;
+  width: 7.9cm;
+  height: 38px;
+  border: 1px solid rgb(83, 100, 113);
+  border-radius: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(29, 155, 240);
 }
