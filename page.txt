@@ -1,0 +1,14 @@
+TREE.COM
+
+1. Sign In and Sign Up - Truong
+2. Sign In - Tung
+3. Sign Up - Tung
+4. New feed - Quang (Home, Friend, Marketplace, Story)
+5. List Friend - Truong
+6. Marketplace - Tung
+7. Story - Truong 
+8. Trang ca nhan - Quang
+
+
+Moi trang chia lam mot folder, moi folder co 1 folder img
+
