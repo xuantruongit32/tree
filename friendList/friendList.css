@@ -8,7 +8,7 @@
 }
 
 body{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,9 +19,15 @@ h3{
     font-size: 1.75em;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .box{
+    padding: 0 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     min-width: 350px;
 }
@@ -36,6 +42,8 @@ h3{
     transition: 0.5s;
     overflow: hidden;
     background: #fff;
+    min-width: 300px;
+    margin-right: 70px;
 }
 .box .list .img{
     position: relative;
