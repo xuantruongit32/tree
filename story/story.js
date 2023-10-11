@@ -40,23 +40,43 @@ const allStories = [
         imgUrl : 'img/worldbeautiesandwonder.jpg',
     },
 ]
-
 function storyClick() {
     const stories = document.querySelectorAll('.container .list .story');
     const selectedStory = document.querySelector('.full .storyF');
   
-    function updateIndex(index) {
+    let selectedIndex = 0; 
+  
+    function updateSelectedStory(index) {
       const story = allStories[index];
       selectedStory.querySelector('img').src = story.imgUrl;
       selectedStory.querySelector('.name').textContent = story.name;
     }
-    updateIndex(0);
+  
+    updateSelectedStory(selectedIndex);
+  
     stories.forEach((story, index) => {
       story.addEventListener('click', () => {
-        updateIndex(index);
+        updateSelectedStory(index);
+        selectedIndex = index; 
       });
+    });
+  
+    document.querySelector('.full .leftArrow').addEventListener('click', () => {
+      if (selectedIndex > 0) {
+        selectedIndex--;
+        updateSelectedStory(selectedIndex);
+      }
+    });
+  
+    document.querySelector('.full .rightArrow').addEventListener('click', () => {
+      if (selectedIndex < allStories.length - 1) {
+        selectedIndex++;
+        updateSelectedStory(selectedIndex);
+      }
     });
   }
   
-storyClick();
+  storyClick();
+  
+
   
