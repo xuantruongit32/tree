@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    font-family: "TwitterChirpExtendedHeavy", "Verdana", -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #edeef0;
+    margin: auto;
+    padding: auto;
+  }
+
+[src="img/logo.png"] {
+    width: 452px;
+    margin-top: 200px;
+    margin-left: 80px;
+  }
+
+  .user {
+    width: 20cm;
+    float: right;
+    margin-top: 40px;
+  }
+
+  h1 {
+    color: #0f1419;
+    font-size: 64px;
+    width: 660px;
+    letter-spacing: -3.2px;
+    line-height: 85px;
+  }
+
+  h2 {
+    color: #0f1419;
+    font-size: 28px;
+  }
+
+  .submit{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    width: 10cm;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+}
+.input{
+    background: transparent;
+    border: 1;
+    outline: 1;
+    color: #131313;
+    flex-grow: 1;
+}
+.input::placeholder{
+    color: #070707;
+}
+.submit:hover{
+    border: 1px solid #18c549;
+}
