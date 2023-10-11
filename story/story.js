@@ -75,7 +75,26 @@ function storyClick() {
       }
     });
   }
+  function storyScroll() {
+    const list = document.querySelector('.container .content');
+    const i = 120; 
   
+    document.querySelector('.container .content .leftArrow').addEventListener('click', () => {
+      list.scrollBy({
+        left: -i,
+        behavior: 'smooth', 
+      });
+    });
+  
+    document.querySelector('.container .content .rightArrow').addEventListener('click', () => {
+      list.scrollBy({
+        left: i,
+        behavior: 'smooth', 
+      });
+    });
+  }
+  
+  storyScroll();
   storyClick();
   
 
