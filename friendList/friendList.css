@@ -43,7 +43,7 @@ h3{
     overflow: hidden;
     background: #fff;
     min-width: 300px;
-    margin-right: 70px;
+    margin-right: 70px; 
 }
 .box .list .img{
     position: relative;
@@ -105,7 +105,4 @@ h3{
     opacity: 1;
     transform: scale(1.23);
 }
-.box .list .infor p:hover{
-    visibility: visible;
-    font-size: 0.75em;
-}
+
