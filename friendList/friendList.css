@@ -43,7 +43,7 @@ h3{
     overflow: hidden;
     background: #fff;
     min-width: 300px;
-    margin-right: 70px; 
+    margin-left: 70px; 
 }
 .box .list .img{
     position: relative;
@@ -93,14 +93,8 @@ h3{
     visibility: hidden;
     font-size: 0.75em;
 }
-
-.box:hover .list{
-    filter: blur(5px);
-    opacity: 0.64;
-}
-
 .box .list:hover{
-    box-shadow: 10px 20px 35px rgb(22, 22, 22);
+    box-shadow: 2px 4px 32px #08c177;
     filter: blur(0);
     opacity: 1;
     transform: scale(1.23);
