@@ -40,3 +40,23 @@ const allStories = [
         imgUrl : 'img/worldbeautiesandwonder.jpg',
     },
 ]
+
+function storyClick() {
+    const stories = document.querySelectorAll('.container .list .story');
+    const selectedStory = document.querySelector('.full .storyF');
+  
+    function updateIndex(index) {
+      const story = allStories[index];
+      selectedStory.querySelector('img').src = story.imgUrl;
+      selectedStory.querySelector('.name').textContent = story.name;
+    }
+    updateIndex(0);
+    stories.forEach((story, index) => {
+      story.addEventListener('click', () => {
+        updateIndex(index);
+      });
+    });
+  }
+  
+storyClick();
+  
