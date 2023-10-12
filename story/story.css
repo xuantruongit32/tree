@@ -122,14 +122,15 @@ body {
   padding: 4px 32px;
   border-radius: 8px;
 }
-.full .sound {
-  width: 32px;
-  position: absolute;
-  left:225px;
-  top:10px;
-  cursor: pointer;
+.timer {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #fff; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
 }
-
 .full .pause{
   width:32px;
   position: absolute;
