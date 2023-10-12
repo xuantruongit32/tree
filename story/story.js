@@ -3,41 +3,61 @@ const allStories = [
         id : 0,
         name : 'CBR',
         imgUrl : 'img/cbr.jpg',
+        type: 'image',
     },
     {
         id : 1,
         name : 'Cong Minh',
         imgUrl : 'img/congminh.jpg',
+        type: 'image',
     },
     {
         id : 2,
         name : 'Hoang Yen',
         imgUrl : 'img/hoangyenchibi.jpg',
+        type: 'image',
     },
     {
         id : 3,
         name : 'Incidental Comics',
         imgUrl : 'img/incidentalcomics.jpg',
+        type: 'image',
     },
     {
         id : 4,
         name : 'Spiderum',
         imgUrl : 'img/spiderum.jpg',
+        type: 'image',
     },
     {
         id : 5,
         name : 'Thai Pham',
         imgUrl : 'img/thaipham.jpg',
+        type: 'image',
     },
     {
         id : 6,
-        name : 'Ngoc Mai',
-        imgUrl : 'img/vungocmai.jpg',
+        name : 'Huong Mysheo',
+        imgUrl : 'img/huongmysheo.jpg',
+        type: 'image',
     },
     {
         id : 7,
+        name : 'Ngoc Mai',
+        imgUrl : 'img/vungocmai.jpg',
+        type: 'image',
+    },
+    {
+        id : 8,
         name : 'World Beauties',
         imgUrl : 'img/worldbeautiesandwonder.jpg',
+        type: 'image',
+    },
+    {
+        id : 9,
+        name : 'My Haylok',
+        imgUrl : 'img/myhaylok.mp4',
+        type: 'video',
     },
 ]
 function storyClick() {
@@ -48,9 +68,24 @@ function storyClick() {
   
     function updateSelectedStory(index) {
       const story = allStories[index];
-      selectedStory.querySelector('img').src = story.imgUrl;
+      const mediaElement = selectedStory.querySelector('video');
+      const imgElement = selectedStory.querySelector('img');
+    
+      if (story.type === 'video') {
+        mediaElement.style.display = 'block';
+        imgElement.style.display = 'none';
+        mediaElement.src = story.imgUrl;
+        mediaElement.load();
+      } else {
+        mediaElement.style.display = 'none';
+        imgElement.style.display = 'block';
+        imgElement.src = story.imgUrl;
+        mediaElement.pause();
+      }
+    
       selectedStory.querySelector('.name').textContent = story.name;
     }
+    
   
     updateSelectedStory(selectedIndex);
   
