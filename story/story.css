@@ -23,21 +23,19 @@ body {
   display: flex;
   cursor: pointer;
 }
-.container .leftArrow
-{
+.container .leftArrow {
   background: #444;
   left: 8px;
 }
-.full .leftArrow{
-    background: #489475;
-    left:120px;
+.full .leftArrow {
+  background: #489475;
+  left: 120px;
 }
-.full .rightArrow{
-    background: #489475;
-    right:120px;
+.full .rightArrow {
+  background: #489475;
+  right: 120px;
 }
-.container .rightArrow
-{
+.container .rightArrow {
   background: #444;
   right: 8px;
 }
@@ -123,4 +121,19 @@ body {
   color: black;
   padding: 4px 32px;
   border-radius: 8px;
+}
+.full .sound {
+  width: 32px;
+  position: absolute;
+  left:225px;
+  top:10px;
+  cursor: pointer;
+}
+
+.full .pause{
+  width:32px;
+  position: absolute;
+  left:180px;
+  top:10px;
+  cursor: pointer;
 }
