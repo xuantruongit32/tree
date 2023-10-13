@@ -87,5 +87,114 @@
 /* body */
 
 .body{
+    
+    margin: 0 20%;
+    
+}
+.body .think{
     background-color: #F0F2F5;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.body .think .top {
+    display: flex;
+    border-bottom:1px solid #08c177;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.body .think .top .avatar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.body  .think .top .avatar img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 20px;
+    
+}
+.body  .think .top .avatar input{
+    border: none;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+}
+.body  .think .button{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.body  .think .button .item{
+    display: flex;
+}
+.body  .think .button .item img{
+    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.body .newFeed{
+  
+ 
+} 
+.body .newFeed .item{
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.body .newFeed .item .avatar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.body .newFeed .item .avatar img{
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;  
+    border-radius: 25px;
+}
+.body .newFeed .item .avatar p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.body .newFeed .item .caption{
+    padding-left: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.body .newFeed .item img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;  
+}
+.body .newFeed .item .contact{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 30px;
+}
+.body .newFeed .item .contact .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .newFeed .item .contact img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover; 
+    padding-right: 10px;
 }
