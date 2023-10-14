@@ -90,13 +90,11 @@ body {
   overflow-y: auto;
 }
 .full .storyF {
-  
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  
 }
 
 .full .storyF img {
@@ -121,21 +119,58 @@ body {
   color: black;
   padding: 4px 32px;
   border-radius: 8px;
-  
 }
 .timer {
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-  background-color: rgba(0, 0, 0, 0.7); 
-  color: #fff; 
-  padding: 5px 10px; 
-  border-radius: 5px; 
-}
-.full .pause{
-  width:32px;
   position: absolute;
-  left:180px;
-  top:10px;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.full .pause {
+  width: 32px;
+  position: absolute;
+  left: 180px;
+  top: 10px;
   cursor: pointer;
 }
+
+.comment{
+  margin: 24px auto;
+  max-width: 700px; 
+  padding: 16px;
+  border: none;
+  background-color: #efefef;
+}
+
+form {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-between;  
+   width: 100%; 
+}
+
+textarea {
+  margin: 8px 0;
+  flex: 1; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button[type="Sent"] {
+  background-color: #08c177;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.comment .emoji{
+  width: 3px;
+  
+}
+
