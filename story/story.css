@@ -150,25 +150,28 @@ form {
   flex-direction: row; 
   align-items: center;
   justify-content: space-between;  
-   width: 100%; 
+   width: 100%;   
+}
+.comment{
+  display: flex;
+
+}
+.comment  input{
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  border: none; 
+ cursor: pointer;
+ margin-right: 20px;
+}
+.comment form .sent{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+
 }
 
-textarea {
-  margin: 8px 0;
-  flex: 1; 
-  padding: 8px;
-  border: 1px solid #ccc;
-  outline: none;
-}
 
-button[type="Sent"] {
-  background-color: #08c177;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 .comment .emoji{
   width: 3px;
   
