@@ -1,8 +1,8 @@
 const allStories = [
   {
     id: 0,
-    name: "CBR",
-    Url: "img/cbr.jpg",
+    name: "Nguyen Huu Tri",
+    Url: "img/nguyenhuutri.jpg",
     type: "image",
   },
   {
@@ -37,8 +37,8 @@ const allStories = [
   },
   {
     id: 6,
-    name: "Thai Pham",
-    Url: "img/thaipham.jpg",
+    name: "BigDawns TV",
+    Url: "img/bigdawnstv.jpg",
     type: "image",
   },
   {
