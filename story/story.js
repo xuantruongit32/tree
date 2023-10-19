@@ -96,7 +96,7 @@ function storyClick() {
       img.style.display = "block";
       img.src = story.Url;
   
-      time = setTimeout(autoNextStory, 5000);
+      time = setTimeout(autoNextStory, 15000);
     }
   
     selectedStory.querySelector(".name").textContent = story.name;
@@ -168,24 +168,32 @@ function storyScroll() {
       });
     });
 }
-function emoji(){
-  const all = document.querySelector('.all');
-  const create = document.createElement('div');
-  create.classList.add('hearts');
-  create.innerHTML = `❤️`;
-  create.style.left = Math.random() * 100 + 'vw';
-  create.style.animationDuration = (Math.random() * 3 + 2) + 's';
-  all.appendChild(create);
-  console.log(create);
+function startEmoji() {
+  let emojiIntervalId = null;
+
+  function emoji() {
+    const all = document.querySelector('.all');
+    const create = document.createElement('div');
+    create.classList.add('hearts');
+    create.innerHTML = '❤️';
+    create.style.left = Math.random() * 100 + 'vw';
+    create.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    all.appendChild(create);
+  }
+
+  document.querySelector('.emoji').addEventListener('click', function () {
+    if (!emojiIntervalId) {
+      emojiIntervalId = setInterval(emoji, 332);
+      setTimeout(() => {
+        clearInterval(emojiIntervalId);
+        emojiIntervalId = null; 
+        const hearts = document.querySelectorAll('.hearts');
+        hearts.forEach(heart => heart.remove());
+      }, 5000);
+    }
+  });
 }
-let id;
-id = setInterval(emoji,932);
 
-setTimeout(() => {
-  clearInterval(id);
-  const hearts = document.querySelectorAll('.hearts');
-  hearts.forEach(heart => heart.remove());
-}, 10000);
-
+startEmoji();
 storyScroll();
 storyClick();
