@@ -260,3 +260,19 @@ height: 40px;
   border-radius: 25px;
 }
 
+.hearts{
+  font-size: 32px;
+  font-weight: bold;
+  position: fixed;
+  transform: translateY(0%);
+  top:-1vh;
+  left:0;
+  animation: fall 1s ease-in infinite;
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(250vh);
+  }
+}
+

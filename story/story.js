@@ -168,5 +168,24 @@ function storyScroll() {
       });
     });
 }
+function emoji(){
+  const all = document.querySelector('.all');
+  const create = document.createElement('div');
+  create.classList.add('hearts');
+  create.innerHTML = `❤️`;
+  create.style.left = Math.random() * 100 + 'vw';
+  create.style.animationDuration = (Math.random() * 3 + 2) + 's';
+  all.appendChild(create);
+  console.log(create);
+}
+let id;
+id = setInterval(emoji,932);
+
+setTimeout(() => {
+  clearInterval(id);
+  const hearts = document.querySelectorAll('.hearts');
+  hearts.forEach(heart => heart.remove());
+}, 10000);
+
 storyScroll();
 storyClick();
