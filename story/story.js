@@ -574,22 +574,9 @@ function startEmoji() {
     create.style.animationDuration = (Math.random() * 3 + 2) + 's';
     all.appendChild(create);
   }
-  // document.querySelectorAll('.emoji span').addEventListener('click', function () {
-  //   if (!emojiIntervalId) {
-  //     emojiIntervalId = setInterval(angry, 332);
-  //     setTimeout(() => {
-  //       clearInterval(emojiIntervalId);
-  //       emojiIntervalId = null; 
-  //       const hearts = document.querySelectorAll('.hearts');
-  //       hearts.forEach(heart => heart.remove());
-  //     }, 5000);
-  //   }
-  // });
-
   const emoji=[tree,heart,cold,chu,devil,angry]
   const emotion =  document.querySelectorAll('.emoji span')
   emotion.forEach((item , index)=>{
-    
     item.addEventListener('click',()=>{
       if (!emojiIntervalId) {
               emojiIntervalId = setInterval(emoji[index], 332);
