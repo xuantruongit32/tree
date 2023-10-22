@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 80%;
   margin: 24px auto;
   position: relative;
 }
@@ -119,13 +119,6 @@ body {
   color: black;
   padding: 4px 32px;
   border-radius: 8px;
-}
-.full .pause {
-  width: 32px;
-  position: absolute;
-  left: 180px;
-  top: 10px;
-  cursor: pointer;
 }
 
 .comment {

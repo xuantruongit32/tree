@@ -73,29 +73,26 @@ function storyClick() {
 
   let selectedIndex = 0;
   let time;
+  let isPlaying = true;
   function updateSelectedStory(index) {
     const story = allStories[index];
     const video = selectedStory.querySelector("video");
     const img = selectedStory.querySelector("img");
   
     clearTimeout(time);
-  
     if (story.type === "video") {
       video.style.display = "block";
       img.style.display = "none";
       video.src = story.Url;
       video.load(); 
-  
       video.onloadedmetadata = function() {
         time = setTimeout(autoNextStory, (video.duration + 5) * 1000);
       };
-  
       video.play();
     } else {
       video.style.display = "none";
       img.style.display = "block";
       img.src = story.Url;
-  
       time = setTimeout(autoNextStory, 15000);
     }
   
