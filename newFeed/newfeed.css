@@ -47,16 +47,16 @@
     object-fit: cover;
 }
 .header .main .home{
-    padding: 10px;
+    padding: 10px 30px;
 }
 .header .main .friend{
-    padding: 10px;
+    padding: 10px 30px;
 }
 .header .main .market{
-    padding: 10px;
+    padding: 10px 30px;
 }
 .header .main .story{
-    padding: 10px;
+    padding: 10px 30px;
 }
 .header .main .friend img{
     width: 40px;
@@ -70,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
 }
 .header .right .item{
    margin: 10px;
@@ -191,6 +192,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.body .newFeed .item .contact svg{
+    width: 30px;
+    height: 30px;
+    object-fit: cover; 
+    padding-right: 10px;
 }
 .body .newFeed .item .contact img{
     width: 30px;
