@@ -8,7 +8,6 @@
 }
 
 body {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -16,17 +15,16 @@ body {
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 2em;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .box {
-  padding: 0 300px;
+  padding: 0 30px;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
   min-width: 350px;
@@ -42,8 +40,7 @@ h3 {
   transition: 0.5s;
   overflow: hidden;
   background: #fff;
-  min-width: 300px;
-  margin-left: 70px;
+  min-width: calc(30% - 20px); 
 }
 .box .list .img {
   position: relative;
@@ -95,9 +92,8 @@ h3 {
 }
 .box .list:hover {
   box-shadow: 2px 4px 32px #08c177;
-  filter: blur(0);
   opacity: 1;
-  transform: scale(1.23);
+  transform: scale(1.15);
 }
 
 .header {
@@ -181,4 +177,28 @@ h3 {
 }
 .header .right .avatar img {
   border-radius: 25px;
+}
+
+.button {
+  gap:23px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.friend-request-button,
+.find-friend-button {
+  background-color: #08c177;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.friend-request-button:hover,
+.find-friend-button:hover {
+  background-color: #067d60;
 }
