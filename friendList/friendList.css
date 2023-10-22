@@ -183,13 +183,13 @@ h3 {
   gap:23px;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 232px;
 }
 
 .friend-request-button,
 .find-friend-button {
   background-color: #08c177;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 20px;
   padding: 8px 15px;
@@ -201,6 +201,7 @@ h3 {
 .friend-request-button:hover,
 .find-friend-button:hover {
   background-color: #067d60;
+  color: #fff;
 }
 .container .button .search{
   width: 65px;
@@ -266,4 +267,3 @@ ion-icon{
   font-size: 1.5em;
   cursor: pointer;
 }
-
