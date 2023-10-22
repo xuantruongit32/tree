@@ -592,6 +592,14 @@ function startEmoji() {
 
 }
 
+function clearInput(){ 
+  const input = document.querySelector(".comment input");
+  input.value= "";  
+}
+
+const sentButton = document.querySelector(".comment .sent");
+sentButton.addEventListener("click",clearInput);
+
 startEmoji();
 storyScroll();
 storyClick();
