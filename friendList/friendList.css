@@ -202,3 +202,68 @@ h3 {
 .find-friend-button:hover {
   background-color: #067d60;
 }
+.container .button .search{
+  width: 65px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container .button .search input{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: #08c177;
+  padding: 10px 25px;
+  outline: none;
+  font-size: 1.1em;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.container .button .search input::placeholder, .container .button .search input{
+  color: transparent;
+}
+.container .button .search:hover input::placeholder, .container .button .search:hover input{
+  color: #555;
+}
+.container .button .search::before{
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  z-index: 1;
+  filter: blur(1px);
+
+}
+.container .button .search::after{
+  content: '';
+  position: absolute;
+  top:0;
+  left: -1px;
+  width: 10px;
+  height: 100%;
+  z-index: 1;
+  filter: blur(1px);
+}
+.container .button .search:hover{
+  width:400px;
+}
+.container .button .search input:hover{
+  border: 1px solid #08c177;
+}
+ion-icon{
+  position: absolute;
+  right: 20px;
+  color: green;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
