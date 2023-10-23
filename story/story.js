@@ -1,71 +1,90 @@
 const allStories = [
   {
-    id: 0,
     name: "Nguyen Huu Tri",
-    Url: "img/nguyenhuutri.jpg",
-    type: "image",
+    imgSrc: "img/nguyenhuutri.jpg",
+    vidSrc: "none"
   },
   {
-    id: 1,
     name: "Ehan Dayi",
-    Url: "img/ehandayi.mp4",
-    type: "video",
+    imgSrc: "img/ehandayi.jpg",
+    vidSrc: "img/ehandayi.mp4",
   },
   {
-    id: 2,
     name: "Cong Minh",
-    Url: "img/congminh.jpg",
-    type: "image",
+    imgSrc: "img/congminh.jpg",
+    vidSrc: "none",
   },
   {
-    id: 3,
     name: "Hoang Yen",
-    Url: "img/hoangyenchibi.jpg",
-    type: "image",
+    imgSrc: "img/hoangyenchibi.jpg",
+    vidSrc: "none",
   },
   {
-    id: 4,
     name: "Incidental Comics",
-    Url: "img/incidentalcomics.jpg",
-    type: "image",
+    imgSrc: "img/incidentalcomics.jpg",
+    vidSrc: "none",
   },
   {
-    id: 5,
     name: "Spiderum",
-    Url: "img/spiderum.jpg",
-    type: "image",
+    imgSrc: "img/spiderum.jpg",
+    vidSrc: "none",
   },
   {
-    id: 6,
     name: "BigDawns TV",
-    Url: "img/bigdawnstv.jpg",
-    type: "image",
+    imgSrc: "img/bigdawnstv.jpg",
+    vidSrc: "none",
   },
   {
-    id: 7,
     name: "Huong Mysheo",
-    Url: "img/huongmysheo.jpg",
-    type: "image",
+    imgSrc: "img/huongmysheo.jpg",
+    vidSrc: "none",
   },
   {
-    id: 8,
     name: "Ngoc Mai",
-    Url: "img/vungocmai.jpg",
-    type: "image",
+    imgSrc: "img/vungocmai.jpg",
+    vidSrc: "none",
   },
   {
-    id: 9,
     name: "World Beauties",
-    Url: "img/worldbeautiesandwonder.jpg",
-    type: "image",
+    imgSrc: "img/worldbeautiesandwonder.jpg",
+    vidSrc: "none",
   },
   {
-    id: 10,
     name: "My Haylok",
-    Url: "img/myhaylok.mp4",
-    type: "video",
+    imgSrc: "img/myhaylok.jpg",
+    vidSrc: "img/myhaylok.mp4"
   },
 ];
+function createStory(story) {
+  const storyDiv = document.createElement('div');
+  storyDiv.classList.add('story');
+
+  const imgDiv = document.createElement('div');
+  imgDiv.classList.add('img');
+
+  const imgElement = document.createElement('img');
+  imgElement.src = story.imgSrc;
+  imgElement.alt = story.name;
+
+  const nameElement = document.createElement('div');
+  nameElement.classList.add('name');
+  nameElement.textContent = story.name;
+
+  imgDiv.appendChild(imgElement);
+  storyDiv.appendChild(imgDiv);
+  storyDiv.appendChild(nameElement);
+
+  return storyDiv;
+}
+
+function listStory() {
+  const stories = document.getElementById('stories');
+  allStories.forEach(story => {
+      const storyElement = createStory(story);
+      stories.appendChild(storyElement);
+  });
+}
+
 function storyClick() {
   const stories = document.querySelectorAll(".container .list .story");
   const selectedStory = document.querySelector(".full .storyF");
@@ -80,10 +99,10 @@ function storyClick() {
     const img = selectedStory.querySelector("img");
   
     clearTimeout(time);
-    if (story.type === "video") {
+    if (story.vidSrc != "none") {
       video.style.display = "block";
       img.style.display = "none";
-      video.src = story.Url;
+      video.src = story.vidSrc;
       video.load(); 
       video.onloadedmetadata = function() {
         time = setTimeout(autoNextStory, (video.duration + 5) * 1000);
@@ -92,7 +111,7 @@ function storyClick() {
     } else {
       video.style.display = "none";
       img.style.display = "block";
-      img.src = story.Url;
+      img.src = story.imgSrc;
       time = setTimeout(autoNextStory, 15000);
     }
   
@@ -597,6 +616,33 @@ function clearInput(){
 const sentButton = document.querySelector(".comment .sent");
 sentButton.addEventListener("click",clearInput);
 
+
+const home = document.querySelector('.all .header .main .home');
+const friend=document.querySelector('.all .header .main .friend');
+const market = document.querySelector('.all .header .main .market');
+const story= document.querySelector('.all .header .main .story');
+const personal=document.querySelector('.all .header .right .avatar');
+
+const changePage = ()=>{
+    home.addEventListener('click',()=>{
+        document.location.href='../newFeed/newfeed.html'
+    });
+    friend.addEventListener('click',()=>{
+        document.location.href='../friendList/friendList.html'
+    });
+    // market.addEventListener('click',()=>{
+    //     document.location.href='../'
+    // })
+    story.addEventListener('click',()=>{
+        document.location.href='../story/story.html'
+    });
+  
+    personal.addEventListener('click',()=>{
+        document.location.href='../personalPage/personPage.html'
+    });
+}
+listStory();
+changePage();
 startEmoji();
 storyScroll();
 storyClick();
