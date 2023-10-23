@@ -27,20 +27,20 @@ const feel = ()=>{
 
 const changePage = ()=>{
     home.addEventListener('click',()=>{
-        document.location.href='../newFeed/newfeed.html'
+        window.location.href='../newFeed/newfeed.html'
     })
     friend.addEventListener('click',()=>{
-        document.location.href='../friendList/friendList.html'
+        window.location.href='../friendList/friendList.html'
     })
     // market.addEventListener('click',()=>{
     //     document.location.href='../'
     // })
     story.addEventListener('click',()=>{
-        document.location.href='../story/story.html'
+        window.location.href='../story/story.html'
     })
   
     personal.addEventListener('click',()=>{
-        document.location.href='../personalPage/personPage.html'
+        window.location.href='../pe   rsonalPage/personPage.html'
     })
 }
 feel()
