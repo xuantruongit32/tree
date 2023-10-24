@@ -32,15 +32,15 @@ const changePage = ()=>{
     friend.addEventListener('click',()=>{
         window.location.href='../friendList/friendList.html'
     })
-    // market.addEventListener('click',()=>{
-    //     document.location.href='../'
-    // })
+    market.addEventListener('click',()=>{
+        document.location.href='../marrket/market.html'
+    })
     story.addEventListener('click',()=>{
         window.location.href='../story/story.html'
     })
   
     personal.addEventListener('click',()=>{
-        window.location.href='../pe   rsonalPage/personPage.html'
+        window.location.href='../personalPage/personPage.html'
     })
 }
 feel()

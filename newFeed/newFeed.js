@@ -32,9 +32,9 @@ const changePage = ()=>{
     friend.addEventListener('click',()=>{
         window.location.href='../friendList/friendList.html'
     })
-    // market.addEventListener('click',()=>{
-    //     document.location.href='../'
-    // })
+    market.addEventListener('click',()=>{
+        document.location.href='../marrket/market.html'
+    })
     story.addEventListener('click',()=>{
         window.location.href='../story/story.html'
     })
