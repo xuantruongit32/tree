@@ -109,3 +109,29 @@ for (let i = 0; i < listFriend.length; i++) {
   });
 }
 friendsListHeading.textContent = `Friends List (${listFriend.length})`;
+
+const home = document.querySelector(' .header .main .home');
+const friend=document.querySelector(' .header .main .friend');
+const market = document.querySelector(' .header .main .market');
+const story= document.querySelector(' .header .main .story');
+const personal=document.querySelector('.header .right .avatar');
+
+const changePage = ()=>{
+    home.addEventListener('click',()=>{
+        document.location.href='../newFeed/newfeed.html'
+    });
+    friend.addEventListener('click',()=>{
+        document.location.href='../friendList/friendList.html'
+    });
+     market.addEventListener('click',()=>{
+         document.location.href='../'
+     })
+    story.addEventListener('click',()=>{
+        document.location.href='../story/story.html'
+    });
+  
+    personal.addEventListener('click',()=>{
+        document.location.href='../personalPage/personPage.html'
+    });
+}
+changePage();
