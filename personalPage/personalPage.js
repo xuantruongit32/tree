@@ -5,6 +5,7 @@ const friend=document.querySelector('.header .main .friend')
 const market = document.querySelector('.header .main .market')
 const story= document.querySelector('.header .main .story')
 const personal=document.querySelector('.header .right .avatar')
+const logout=document.querySelector('.logout')
 const feel = ()=>{
     tree.forEach((item,index)=>{
         item.addEventListener('click',()=>{
@@ -41,6 +42,9 @@ const changePage = ()=>{
   
     personal.addEventListener('click',()=>{
         window.location.href='../personalPage/personalPage.html'
+    })
+    logout.addEventListener('click',()=>{
+        window.location.href='../signIn/login.html'
     })
 }
 feel()
