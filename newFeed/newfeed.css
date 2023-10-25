@@ -90,6 +90,12 @@
 .body{
     
     margin: 0 20%;
+    position: relative;
+    
+}
+
+
+.body .left-screen .avatar img{
     
 }
 .body .think{
