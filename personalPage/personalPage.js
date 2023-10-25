@@ -40,7 +40,7 @@ const changePage = ()=>{
     })
   
     personal.addEventListener('click',()=>{
-        window.location.href='../personalPage/personPage.html'
+        window.location.href='../personalPage/personalPage.html'
     })
 }
 feel()

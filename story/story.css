@@ -167,7 +167,6 @@ body {
 .emoji svg:hover {
   transform: scale(1.32); 
 }
-
 .header{
   display: flex;
   justify-content: space-between;
@@ -208,6 +207,7 @@ margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 
@@ -217,16 +217,16 @@ margin-right: 20px;
   object-fit: cover;
 }
 .header .main .home{
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .friend{
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .market{
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .story{
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .friend img{
   width: 40px;
@@ -240,6 +240,7 @@ margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 .header .right .item{
  margin: 10px;
@@ -247,11 +248,13 @@ margin-right: 20px;
 .header .right .item img{
 width: 40px;
 height: 40px;
+cursor: pointer;
 }
 .header .right .avatar img{
 
   border-radius: 25px;
 }
+
 
 .hearts{
   font-size: 32px;
