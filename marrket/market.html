@@ -3,92 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market</title>
+    <link rel="icon" href="img/icon.png" />
+    <title>Tree.com | Marketplace</title>
     <link rel="stylesheet" href="market.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--icon-->
 </head>
 <body>
     <header>
         <div class="nav container">
             <a href="#" class="logo">Ecommerce</a>
-            <i class='bx bx-shopping-bag' id="gio_hang"></i>
-            <div class="gio">
-                <h2 class="gio-title"> gio hang </h2>  
-                <div class="gio-content">
-                    <div class="gio-box">
-                        <img src="img/messi.jpg.img" alt="gio-img">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="img/messi.jpg.img" alt="" class="cart-img">
                         <div class="detail-box">
-                            <div class="gio-product-title">Cup</div>
-                            <div class="gio-price">100000000k</div>
-                            <input type="number" value="1" class="gio-quantity">
+                            <div class="cart-product-title">cup</div>
+                            <div class="cart-price">100VND</div>
+                            <input type="number" value="1" class="cart-quatity">
                         </div>
-                        <i class='bx bx-trash gio-remove' ></i>
+                        <!-- remove cart-->
+                        <i class='bx bx-trash cart-remove' ></i>
                     </div>
                 </div>
+                <!--total-->
                 <div class="total">
-                    <div class="total-title">total</div>
-                    <div class="total-price">0k</div>
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
                 </div>
-                <button type="button" class="btn-buy">mua</button>
-                <i class='bx bx-x' id="dong-gio"></i>
+                <!-- Buy-->
+                <button type="button" class="btn-buy"> Buy now</button>
+                <i class='bx bx-x' id="close-cart"></i>
             </div>
         </div>
     </header>
     <section class="shop container">
-        <h2 class="section-tittle">Shop</h2>
+        <h2 class="section-title">Shop Products</h2>
         <div class="shop-content">
+            <!-- box 1-->
             <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
                 <h2 class="product-title">cup</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">vo dich</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 2-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">ck</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 3-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">hehe</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 4-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">haha</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 5-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">hahahaah</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 6-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">hahahah</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 7-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            <div class="product-box">
-                <img src="img/messi.jpg.img" alt="" class="product">
-                <h2 class="product-title">huhuhu</h2>
-                <span class="price">1000000000000000000000k</span>
-                <i class='bx bx-shopping-bag add-gio_hang'></i>
+              <!-- box 8-->
+              <div class="product-box">
+                <img src="img/messi.jpg.img" alt="" class="product-img">
+                <h2 class="product-title">cup</h2>
+                <span class="price">100VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-           
-
         </div>
     </section>
-    
+    <!-- Link js-->
+    <script src="market.js"></script>
+
 </body>
 </html>

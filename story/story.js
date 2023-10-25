@@ -630,15 +630,15 @@ const changePage = ()=>{
     friend.addEventListener('click',()=>{
         document.location.href='../friendList/friendList.html'
     });
-    // market.addEventListener('click',()=>{
-    //     document.location.href='../'
-    // })
+     market.addEventListener('click',()=>{
+         document.location.href='../'
+     })
     story.addEventListener('click',()=>{
         document.location.href='../story/story.html'
     });
   
     personal.addEventListener('click',()=>{
-        document.location.href='../personalPage/personPage.html'
+        document.location.href='../personalPage/personalPage.html'
     });
 }
 listStory();

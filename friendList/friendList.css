@@ -40,7 +40,7 @@ h3 {
   transition: 0.5s;
   overflow: hidden;
   background: #fff;
-  min-width: calc(30% - 20px); 
+  min-width: calc(30% - 20px);
 }
 .box .list .img {
   position: relative;
@@ -95,7 +95,6 @@ h3 {
   opacity: 1;
   transform: scale(1.15);
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -136,6 +135,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .header .main img {
@@ -144,16 +144,16 @@ h3 {
   object-fit: cover;
 }
 .header .main .home {
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .friend {
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .market {
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .story {
-  padding: 10px;
+  padding: 10px 30px;
 }
 .header .main .friend img {
   width: 40px;
@@ -167,6 +167,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 }
 .header .right .item {
   margin: 10px;
@@ -174,13 +175,14 @@ h3 {
 .header .right .item img {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .header .right .avatar img {
   border-radius: 25px;
 }
 
 .button {
-  gap:23px;
+  gap: 23px;
   display: flex;
   align-items: center;
   margin-left: 232px;
@@ -203,7 +205,7 @@ h3 {
   background-color: #067d60;
   color: #fff;
 }
-.container .button .search{
+.container .button .search {
   width: 65px;
   height: 50px;
   position: relative;
@@ -213,7 +215,7 @@ h3 {
   transition: 0.5s;
 }
 
-.container .button .search input{
+.container .button .search input {
   position: relative;
   width: 100%;
   height: 100%;
@@ -227,40 +229,41 @@ h3 {
   align-items: center;
   border-radius: 50px;
 }
-.container .button .search input::placeholder, .container .button .search input{
+.container .button .search input::placeholder,
+.container .button .search input {
   color: transparent;
 }
-.container .button .search:hover input::placeholder, .container .button .search:hover input{
+.container .button .search:hover input::placeholder,
+.container .button .search:hover input {
   color: #555;
 }
-.container .button .search::before{
-  content: '';
+.container .button .search::before {
+  content: "";
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   width: 10px;
   height: 100%;
   z-index: 1;
   filter: blur(1px);
-
 }
-.container .button .search::after{
-  content: '';
+.container .button .search::after {
+  content: "";
   position: absolute;
-  top:0;
+  top: 0;
   left: -1px;
   width: 10px;
   height: 100%;
   z-index: 1;
   filter: blur(1px);
 }
-.container .button .search:hover{
-  width:400px;
+.container .button .search:hover {
+  width: 400px;
 }
-.container .button .search input:hover{
+.container .button .search input:hover {
   border: 1px solid #08c177;
 }
-ion-icon{
+ion-icon {
   position: absolute;
   right: 20px;
   color: green;
