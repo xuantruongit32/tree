@@ -1,21 +1,17 @@
-localStorage.setItem('email','nguyenvanquangq013@gmail.com')
-localStorage.setItem('password','123456')
+localStorage.setItem('email', 'nguyenvanquangq014@gmail.com');
+localStorage.setItem('password', '123456');
 
+const login = document.querySelector('.btn'); 
+const email = document.querySelector('input[type="email"]'); 
+const password = document.querySelector('input[type="password"]'); 
 
-const login = document.querySelector('.submit')
-const email= document.querySelector('.email')
-const password=document.querySelector('.password')
-console.log(login);
+login.addEventListener('click', (e) => {
+    e.preventDefault();
 
-login.addEventListener('click',(e)=>{
-    e.preventDefault()
-    
-    console.log(email.value==localStorage.getItem('email'));
-    if (email.value==localStorage.getItem('email')&&password.value==localStorage.getItem('password')){
-        alert('dang nhap thanh cong')
-        document.location.href='../newFeed/newfeed.html'
+    if (email.value == localStorage.getItem('email') && password.value == localStorage.getItem('password')) {
+        alert('Đăng nhập thành công'); 
+        document.location.href = '../newFeed/newfeed.html'; 
+    } else {
+        alert('Đăng nhập thất bại'); 
     }
-    else{
-        alert('dang nhap that bai')
-    }
-})
+});

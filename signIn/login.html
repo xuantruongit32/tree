@@ -11,27 +11,40 @@
     <img src="img/logo.png" alt="logo" />
     <div class="user">
       <h1>We are leaves</h1>
-      <h2>Fly now.</h2>
-      <div class="dang nhap">
-        <form action="" id="login">
-          <br />
-          <div class="group">
-            User name:
-            <br />
-            <input type="text" class="input email" placeholder="Ten dang nhap" />
-          </div>
-          <div class="group">
-            User password:
-            <br />
-            <input type="password" class="input password  " placeholder="mat khau" />
-          </div>
-
-          <input type="submit" value="Dang nhap" class="submit" />
-        </form>
+      <div class="wrapper">
+        <div class="form-box login">
+          <h2>Fly now</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox">Remember me
+              </label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an account?<a href="../creat/creat.html" class="register-link"> Register</a></p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./signIn.js"></script>
   </body>
-  <script src="./signIn.js"></script>
 </html>
