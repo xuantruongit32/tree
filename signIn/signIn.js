@@ -1,4 +1,4 @@
-localStorage.setItem('email', 'nguyenvanquangq014@gmail.com');
+localStorage.setItem('email', '1@gmail.com');
 localStorage.setItem('password', '123456');
 
 const login = document.querySelector('.btn'); 
@@ -9,9 +9,10 @@ login.addEventListener('click', (e) => {
     e.preventDefault();
 
     if (email.value == localStorage.getItem('email') && password.value == localStorage.getItem('password')) {
-        alert('Đăng nhập thành công'); 
         document.location.href = '../newFeed/newfeed.html'; 
     } else {
-        alert('Đăng nhập thất bại'); 
+        alert('Login Fail'); 
+        email.value ='';
+        password.value = '';
     }
 });
