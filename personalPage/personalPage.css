@@ -1,3 +1,6 @@
+.none {
+    display:  none;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -224,6 +227,15 @@
     width: 100%;
     height: 600px;
     object-fit: cover;  
+}
+.body .newFeed .item .member-like{
+    display: flex;
+  align-items: center;
+  margin: 0px 30px;
+  padding: 5px 0;
+  border-bottom: 1px solid #08c177;
+  color: #08c177;
+  font-size: 18px;
 }
 .body .newFeed .item .contact{
  display: flex;
