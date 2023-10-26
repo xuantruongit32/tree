@@ -10,22 +10,26 @@ const personal=document.querySelector('.header .right .avatar')
 const logout=document.querySelector('.logout')
 const isLikedArray = new Array(tree.length).fill(false);
 const textEmotion=document.querySelectorAll(' .body .newFeed .item .contact .emotion p')
-
-
+const memberLike = document.querySelectorAll('.member-like ')
+console.log(memberLike);
 
 const feel = ()=>{
     
     tree.forEach((item,index)=>{
         item.addEventListener('click',()=>{
+           let text = memberLike[index].innerHTML
            item.classList.add('none')
            liked[index].classList.remove('none')
+           memberLike[index].innerHTML=`you and ${text}`
         })
     
     })
     liked.forEach((item,index)=>{
         item.addEventListener('click',()=>{
+           let text = memberLike[index].innerHTML 
            item.classList.add('none')
            tree[index].classList.remove('none')
+           memberLike[index].innerHTML=text.split('you and ')[1]
         })
     
     })
