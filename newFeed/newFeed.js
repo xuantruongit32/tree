@@ -20,13 +20,13 @@ const feel = ()=>{
             let text= textEmotion[index].innerHTML
            item.classList.add('none')
            liked[index].classList.remove('none')
-           textEmotion[index].innerHTML=`you and ${text}`
+           textEmotion[index].innerHTML=`You and ${text}`
         })
     
     })
     liked.forEach((item,index)=>{
         item.addEventListener('click',()=>{
-            let text =textEmotion[index].innerHTML.split('you and')
+            let text =textEmotion[index].innerHTML.split('You and')
            item.classList.add('none')
            tree[index].classList.remove('none')
            textEmotion[index].innerHTML=text[1]

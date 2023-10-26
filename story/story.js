@@ -631,7 +631,7 @@ const changePage = ()=>{
         document.location.href='../friendList/friendList.html'
     });
      market.addEventListener('click',()=>{
-         document.location.href='../'
+         document.location.href='../marrket/market.html'
      })
     story.addEventListener('click',()=>{
         document.location.href='../story/story.html'
