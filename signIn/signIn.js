@@ -16,3 +16,17 @@ login.addEventListener('click', (e) => {
         password.value = '';
     }
 });
+const togglePasswordVisibility = () => {
+    const passwordInput = document.querySelector('input[type="password"]');
+    const lockClosedIcon = document.querySelector('ion-icon[name="lock-closed"]');
+    
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      lockClosedIcon.setAttribute('name', 'lock-open'); 
+    } 
+    
+  };
+  
+  const lockClosedIcon = document.querySelector('ion-icon[name="lock-closed"]');
+  lockClosedIcon.addEventListener('click', togglePasswordVisibility);
+  
